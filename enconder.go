@@ -92,7 +92,7 @@ func obfuscate(str string) string {
 		return str
 	}
 
-	return strings.Repeat("**", length-4) + str[length-4:]
+	return strings.Repeat("*", length-4) + str[length-4:]
 }
 
 func marshalPrt(v interface{}, opts marshalOpts) ([]byte, error) {
